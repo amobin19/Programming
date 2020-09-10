@@ -24,7 +24,7 @@ def main():
     for i in range(0, len(new_list)):  # loop through  each value
         new_list[i] = str(new_list[i])  # convert each value to str
     joined_list = ''.join(new_list)  # join list together
-    print(joined_list)  # output binary value
+    print("Binary value: " + joined_list)  # output binary value
 
 
 if __name__ == '__main__':
