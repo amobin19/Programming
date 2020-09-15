@@ -19,12 +19,15 @@ def toBinary(x):
 
 
 def main():
-    decimal = int(input("Decimal value: "))  # take decimal input
-    new_list = toBinary(decimal)  # list to convert to str
-    for i in range(0, len(new_list)):  # loop through  each value
-        new_list[i] = str(new_list[i])  # convert each value to str
-    joined_list = ''.join(new_list)  # join list together
-    print("Binary value: " + joined_list)  # output binary value
+    try:
+        decimal = int(input("Decimal value: "))  # take decimal input
+        new_list = toBinary(decimal)  # list to convert to str
+        for i in range(0, len(new_list)):  # loop through  each value
+            new_list[i] = str(new_list[i])  # convert each value to str
+        joined_list = ''.join(new_list)  # join list together
+        print("Binary value: " + joined_list)  # output binary value9
+    except ValueError:
+        print("positive int inputs only")
 
 
 if __name__ == '__main__':
